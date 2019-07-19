@@ -3,6 +3,10 @@
     margin-top: 150px;
   }
 
+  .margin-2 {
+    margin-top: 300px;
+  }
+
   .po-toolbar-position {
     position: initial;
   }
@@ -158,6 +162,55 @@
           </div>
         </div>
       </div>
+
+    </div>
+
+
+    <div class="container po-lg-12 margin-2 po-mb-5">
+      <h4>Toolbar com campo de pesquisa</h4>
+      <div class="po-toolbar po-toolbar-position">
+        <div class="po-toolbar-title"> PORTINARI HTML FRAMEWORK </div>
+        <div class="po-toolbar-group-icon">
+
+
+
+          <div class="po-toolbar-search-container">
+            <span class="po-icon po-icon-search po-toolbar-search-icon"></span>
+            <input 
+              class="po-toolbar-search-input po-pl-4 po-pr-1" 
+              role="combobox"
+              type="text" 
+              aria-autocomplete="both"
+              aria-expanded="true"
+              aria-haspopup="true"
+              aria-owns="toolbarSearchPopup"
+              placeholder="Placeholder">
+              <ul id="toolbarSearchPopup" class="po-toolbar-search-list-box">
+                <li class="po-toolbar-search-list-item" role="option">
+                  Alabama
+                </li>
+                <li class="po-toolbar-search-list-item" role="option">
+                  Florida
+                </li>
+                <li class="po-toolbar-search-list-item" role="option">
+                  Montana
+                </li>
+              </ul>
+          </div>
+
+
+
+
+          <div class="po-toolbar-notification po-clickable">
+            <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+            <div class="po-toolbar-notification-badge">7</div>
+          </div>
+          <div class="po-toolbar-profile po-clickable">
+            <span class="po-icon po-icon-user po-toolbar-icon"></span>
+          </div>
+        </div>
+      </div>
+
 
     </div>
 
