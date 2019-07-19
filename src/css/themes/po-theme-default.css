@@ -68,7 +68,9 @@
  * Tag.........................variáveis do Tag.
  * Textarea....................variáveis do Textarea.
  * Toolbar.....................variáveis do Toolbar.
- * Toolbar Search..............variáveis do Toolbar Search.
+ * Toolbar Search Input..............variáveis do Toolbar Search Input.
+ * Toolbar Search Box..............variáveis do Toolbar Search Box.
+
  * Tooltip.....................variáveis do Tooltip.
  * Upload......................variáveis do Upload.
  * Widget......................variáveis do Widget.
@@ -981,16 +983,20 @@
   --color-toolbar-color-title: var(--color-secondary);
 
 /*------------------------------------*\
-  TOOLBAR SEARCH
+  TOOLBAR SEARCH INPUT
 \*------------------------------------*/
 
-  --color-toolbar-search-input-background-color-text: var(--color-white);
-  --color-toolbar-search-input-border-text: var(--color-neutral-light-90);
-  --color-toolbar-search-input-border-text-focusable: var(--color-primary);
-  --color-toolbar-search-input-text-placeholder: var(--color-neutral-light-40);
-  --color-toolbar-search-icon-color-default: var(--color-primary);
+  --color-toolbar-search-input-background-input-text: var(--color-white);
+  --color-toolbar-search-input-border-input: var(--color-neutral-light-90);
+  --color-toolbar-search-input-border-input-focused: var(--color-primary);
+  --color-toolbar-search-input-color-icon: var(--color-primary);
+  --color-toolbar-search-input-color-input-placeholder: var(--color-neutral-light-40);
+  --color-toolbar-search-input-color-caret: var(--color-primary-alpha-50);
 
-
+  /*------------------------------------*\
+  TOOLBAR SEARCH BOX
+\*------------------------------------*/
+  --color-toolbar-search-box-background-color: var(--color-white);
 
 /*------------------------------------*\
   TOOLTIP

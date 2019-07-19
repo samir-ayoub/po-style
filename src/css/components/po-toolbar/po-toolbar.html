@@ -172,34 +172,28 @@
         <div class="po-toolbar-title"> PORTINARI HTML FRAMEWORK </div>
         <div class="po-toolbar-group-icon">
 
-
-
           <div class="po-toolbar-search-container">
             <span class="po-icon po-icon-search po-toolbar-search-icon"></span>
             <input 
+              id="toolbarSearchInput" 
               class="po-toolbar-search-input po-pl-4 po-pr-1" 
-              role="combobox"
-              type="text" 
               aria-autocomplete="both"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-haspopup="true"
-              aria-owns="toolbarSearchPopup"
-              placeholder="Placeholder">
-              <ul id="toolbarSearchPopup" class="po-toolbar-search-list-box">
-                <li class="po-toolbar-search-list-item" role="option">
-                  Alabama
-                </li>
-                <li class="po-toolbar-search-list-item" role="option">
-                  Florida
-                </li>
-                <li class="po-toolbar-search-list-item" role="option">
-                  Montana
-                </li>
-              </ul>
+              placeholder="Placeholder"
+              role="combobox"
+              type="text">
+            <ul 
+              class="po-toolbar-search-list-box"
+              aria-labelledby="toolbarSearchInput"
+              role="listbox">
+              <li class="po-toolbar-search-list-item" role="option">Alabama</li>
+              <li class="po-toolbar-search-list-item" role="option">Alaska</li>
+              <li class="po-toolbar-search-list-item" role="option">Arkansas</li>
+              <li class="po-toolbar-search-list-item" role="option">Florida</li>
+              <li class="po-toolbar-search-list-item" role="option">Montana</li>
+            </ul>
           </div>
-
-
-
 
           <div class="po-toolbar-notification po-clickable">
             <span class="po-icon po-icon-notification po-toolbar-icon"></span>
@@ -210,9 +204,85 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
+    <div class="container po-lg-12 margin-2 po-mb-5">
+      <h4>Toolbar com campo de pesquisa e com proposta de largura indicada para foco</h4>
+      <div class="po-toolbar po-toolbar-position">
+        <div class="po-toolbar-title"> PORTINARI HTML FRAMEWORK </div>
+        <div class="po-toolbar-group-icon">
+
+          <div class="po-toolbar-search-container">
+            <span class="po-icon po-icon-search po-toolbar-search-icon"></span>
+            <input 
+              id="toolbarSearchInput" 
+              class="po-toolbar-search-input po-toolbar-search-input-focused po-pl-4 po-pr-1" 
+              aria-autocomplete="both"
+              aria-expanded="false"
+              aria-haspopup="true"
+              placeholder="Placeholder"
+              role="combobox"
+              type="text">
+            <ul 
+              class="po-toolbar-search-list-box"
+              aria-labelledby="toolbarSearchInput"
+              role="listbox">
+              <li class="po-toolbar-search-list-item" role="option">Alabama</li>
+              <li class="po-toolbar-search-list-item" role="option">Alaska</li>
+              <li class="po-toolbar-search-list-item" role="option">Arkansas</li>
+              <li class="po-toolbar-search-list-item" role="option">Florida</li>
+              <li class="po-toolbar-search-list-item" role="option">Montana</li>
+            </ul>
+          </div>
+
+          <div class="po-toolbar-notification po-clickable">
+            <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+            <div class="po-toolbar-notification-badge">7</div>
+          </div>
+          <div class="po-toolbar-profile po-clickable">
+            <span class="po-icon po-icon-user po-toolbar-icon"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container po-lg-12 margin-2 po-mb-5">
+      <h4>Toolbar com campo de pesquisa e popup com opções aberto</h4>
+      <div class="po-toolbar po-toolbar-position">
+        <div class="po-toolbar-title"> PORTINARI HTML FRAMEWORK </div>
+        <div class="po-toolbar-group-icon">
+
+          <div class="po-toolbar-search-container">
+            <span class="po-icon po-icon-search po-toolbar-search-icon"></span>
+            <input 
+              id="toolbarSearchInput" 
+              class="po-toolbar-search-input po-toolbar-search-input-focused po-pl-4 po-pr-1" 
+              aria-autocomplete="both"
+              aria-expanded="true"
+              aria-haspopup="true"
+              placeholder="Placeholder"
+              role="combobox"
+              type="text"
+              value="Ala">
+            <ul 
+              class="po-toolbar-search-list-box po-show"
+              aria-labelledby="toolbarSearchInput"
+              role="listbox">
+              <li class="po-toolbar-search-list-item-selected" role="option" aria-selected="true">Alabama</li>
+              <li class="po-toolbar-search-list-item" role="option">Alaska</li>
+            </ul>
+          </div>
+
+          <div class="po-toolbar-notification po-clickable">
+            <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+            <div class="po-toolbar-notification-badge">7</div>
+          </div>
+          <div class="po-toolbar-profile po-clickable">
+            <span class="po-icon po-icon-user po-toolbar-icon"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </article>
