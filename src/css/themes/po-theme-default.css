@@ -68,8 +68,8 @@
  * Tag.........................variáveis do Tag.
  * Textarea....................variáveis do Textarea.
  * Toolbar.....................variáveis do Toolbar.
- * Toolbar Search Input..............variáveis do Toolbar Search Input.
- * Toolbar Search Box..............variáveis do Toolbar Search Box.
+ * Toolbar Search Input........variáveis do Toolbar Search Input.
+ * Toolbar Search Box..........variáveis do Toolbar Search Box.
 
  * Tooltip.....................variáveis do Tooltip.
  * Upload......................variáveis do Upload.
@@ -996,7 +996,11 @@
   /*------------------------------------*\
   TOOLBAR SEARCH BOX
 \*------------------------------------*/
+
   --color-toolbar-search-box-background-color: var(--color-white);
+  --color-toolbar-search-box-list-item-group-backgroud-color: var(--color-neutral-light-98);
+  --color-toolbar-search-box-list-item-backgroud-color: var(--color-white);
+  --color-toolbar-search-box-list-item-group-clear-color-text: var(--color-primary);
 
 /*------------------------------------*\
   TOOLTIP

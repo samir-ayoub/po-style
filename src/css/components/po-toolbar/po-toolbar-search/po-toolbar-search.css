@@ -42,28 +42,3 @@
 .po-toolbar-search-input::placeholder {
   color: var(--color-toolbar-search-input-color-input-placeholder);
 }
-
-.po-toolbar-search-list-box {
-  background-color: var(--color-toolbar-search-box-background-color);
-  border: 1px #dddddd solid;
-  display: none;
-  height: auto;
-  left: 0;
-  list-style: none;
-  max-height: 240px;
-  overflow: scroll;
-  padding-top: 24px;
-  position: absolute;
-  right: 0;
-  text-align: left;
-  top: 50%;
-  z-index: -1;
-}
-
-.po-toolbar-search-list-box.po-show {
-  display: block;
-}
-
-.po-toolbar-search-list-item-selected {
-  background-color: red;
-}
