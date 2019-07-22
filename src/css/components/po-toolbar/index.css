@@ -1,3 +1,5 @@
 @import './po-toolbar.css';
+
 @import './po-toolbar-search/po-toolbar-search.css';
 @import './po-toolbar-search-box/po-toolbar-search-box.css';
+@import './po-toolbar-search-input/po-toolbar-search-input.css';

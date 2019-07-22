@@ -1,44 +1,17 @@
-:root {
-  --font-toolbar-search-input-text: {
-    @apply --font-text;
-  }
-}
-
 .po-toolbar-search-container {
-  display: inline-block;
-  margin-right: 16px;
-  position: relative;
-  vertical-align: middle;
-  z-index: 1;
+  display: none;
 }
 
-.po-toolbar-search-icon {
-  color: var(--color-toolbar-search-input-color-icon);
-  left: 8px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
+@media screen and (min-width: 950px) { 
 
-.po-toolbar-search-input {
-  @apply --font-toolbar-search-input-text;
-  appearance: textfield;
-  background-color: var(--color-toolbar-search-input-background-input-text);
-  border: solid 1px var(--color-toolbar-search-input-border-input);
-  border-radius: 50px;
-  box-shadow: none;
-  caret-color: var(--color-toolbar-search-input-color-caret);
-  height: 32px;
-  transition: width, 0.3s ease-out;
-  width: 240px;
-}
+  .po-toolbar-search-container {
+    display: table-cell;
+    padding-right: 16px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 1%;
+    z-index: 1;
+  } 
 
-.po-toolbar-search-input-focused, .po-toolbar-search-input:focus {
-  border: solid 1px var(--color-toolbar-search-input-border-input-focused);
-  outline: none;
-  width: 480px;
-}
-
-.po-toolbar-search-input::placeholder {
-  color: var(--color-toolbar-search-input-color-input-placeholder);
 }

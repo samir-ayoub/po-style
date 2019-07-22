@@ -989,9 +989,9 @@
   --color-toolbar-search-input-background-input-text: var(--color-white);
   --color-toolbar-search-input-border-input: var(--color-neutral-light-90);
   --color-toolbar-search-input-border-input-focused: var(--color-primary);
+  --color-toolbar-search-input-color-caret: var(--color-primary-alpha-50);
   --color-toolbar-search-input-color-icon: var(--color-primary);
   --color-toolbar-search-input-color-input-placeholder: var(--color-neutral-light-40);
-  --color-toolbar-search-input-color-caret: var(--color-primary-alpha-50);
 
   /*------------------------------------*\
   TOOLBAR SEARCH BOX

@@ -34,14 +34,27 @@
   display: table-cell;
   height: 24px;
   padding-left: 16px;
+  position: relative;
   text-align: left;
   vertical-align: middle;
+}
+
+.po-toolbar-title-text {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
 }
 
 .po-toolbar-group-icon {
   display: table-cell;
   padding-top: 6px;
-  text-align: right;
+  white-space: nowrap;
+  width: 1%;
 }
 
 .po-toolbar-icon {
@@ -64,14 +77,16 @@
 
 .po-toolbar-actions,
 .po-toolbar-notification,
-.po-toolbar-profile {
+.po-toolbar-profile,
+.po-toolbar-search-icon {
   display: inline-block;
   line-height: 34px;
   vertical-align: middle;
 }
 
 .po-toolbar-actions,
-.po-toolbar-notification {
+.po-toolbar-notification,
+.po-toolbar-search-icon {
   padding-right: 16px;
 }
 
@@ -111,6 +126,13 @@
   @apply --font-toolbar-font-profile-subtitle;
 }
 
+@media screen and (min-width: 950px) {
+
+  .po-toolbar-search-icon {
+    display: none;
+  }
+
+}
 
 @media screen and (max-width: 1366px) {
 
@@ -124,7 +146,8 @@
   }
 
   .po-toolbar-actions,
-  .po-toolbar-notification {
+  .po-toolbar-notification,
+  .po-toolbar-search-icon {
     padding-right: 8px;
   }
 
