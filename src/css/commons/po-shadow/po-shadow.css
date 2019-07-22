@@ -14,7 +14,8 @@
   --shadow-popover-arrow: -1px -1px 1px 0 var(--color-black-alpha-10);
   --shadow-popup: 0 1px 4px 0 var(--color-black-alpha-30);
   --shadow-popup-arrow: -1px -1px 1px 0 var(--color-black-alpha-10);
-
+  --shadow-toolbar-search-modal: 0 4px 16px 0 var(--color-black-alpha-30);
+  
   /**
    * Sombras Internas
    * https://app.zeplin.io/project/57bf4724a09dd68b60e7316f/screen/59692cf42a5c6cda0bac7aa7

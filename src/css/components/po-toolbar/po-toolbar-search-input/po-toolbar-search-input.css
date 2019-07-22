@@ -5,16 +5,23 @@
 }
 
 .po-toolbar-search-input {
-    @apply --font-toolbar-search-input-text;
-    appearance: textfield;
-    background-color: var(--color-toolbar-search-input-background-input-text);
-    border: solid 1px var(--color-toolbar-search-input-border-input);
-    border-radius: 50px;
-    box-shadow: none;
-    caret-color: var(--color-toolbar-search-input-color-caret);
-    height: 32px;
-    transition: width, 0.3s ease-out;
-    width: 240px;
+  @apply --font-toolbar-search-input-text;
+  appearance: textfield;
+  background-color: var(--color-toolbar-search-input-background-input-text);
+  border: solid 1px var(--color-toolbar-search-input-border-input);
+  border-radius: 50px;
+  box-shadow: none;
+  caret-color: var(--color-toolbar-search-input-color-caret);
+  height: 32px;
+  padding-left: 38px;
+  transition: width, 0.3s ease-out;
+  width: 240px;
+}
+
+  .po-toolbar-search-modal-container .po-toolbar-search-input,
+  .po-toolbar-search-modal-container .po-toolbar-search-input-focused,
+  .po-toolbar-search-modal-container .po-toolbar-search-input:focus {
+    width: 100%;
   }
   
   .po-toolbar-search-input-focused, .po-toolbar-search-input:focus {
@@ -33,5 +40,10 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .po-toolbar-search-modal-container .po-toolbar-search-input-icon {
+    font-size: 24px;
+    top: 16px;
   }
   

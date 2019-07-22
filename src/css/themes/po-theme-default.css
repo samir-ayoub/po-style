@@ -68,8 +68,9 @@
  * Tag.........................variáveis do Tag.
  * Textarea....................variáveis do Textarea.
  * Toolbar.....................variáveis do Toolbar.
- * Toolbar Search Input........variáveis do Toolbar Search Input.
  * Toolbar Search Box..........variáveis do Toolbar Search Box.
+ * Toolbar Search Input........variáveis do Toolbar Search Input.
+ * Toolbar Search Modal........variáveis do Toolbar Search Modal.
 
  * Tooltip.....................variáveis do Tooltip.
  * Upload......................variáveis do Upload.
@@ -983,17 +984,6 @@
   --color-toolbar-color-title: var(--color-secondary);
 
 /*------------------------------------*\
-  TOOLBAR SEARCH INPUT
-\*------------------------------------*/
-
-  --color-toolbar-search-input-background-input-text: var(--color-white);
-  --color-toolbar-search-input-border-input: var(--color-neutral-light-90);
-  --color-toolbar-search-input-border-input-focused: var(--color-primary);
-  --color-toolbar-search-input-color-caret: var(--color-primary-alpha-50);
-  --color-toolbar-search-input-color-icon: var(--color-primary);
-  --color-toolbar-search-input-color-input-placeholder: var(--color-neutral-light-40);
-
-/*------------------------------------*\
   TOOLBAR SEARCH BOX
 \*------------------------------------*/
 
@@ -1005,6 +995,24 @@
   --color-toolbar-search-box-list-item-background-color-selected: var(--color-primary-light-95);
   --color-toolbar-search-box-list-item-text-completed: var(--color-neutral-light-40);
   --color-toolbar-search-box-list-item-typed-text: var(--color-neutral-dark-60);
+
+/*------------------------------------*\
+  TOOLBAR SEARCH INPUT
+\*------------------------------------*/
+
+--color-toolbar-search-input-background-input-text: var(--color-white);
+--color-toolbar-search-input-border-input: var(--color-neutral-light-90);
+--color-toolbar-search-input-border-input-focused: var(--color-primary);
+--color-toolbar-search-input-color-caret: var(--color-primary-alpha-50);
+--color-toolbar-search-input-color-icon: var(--color-primary);
+--color-toolbar-search-input-color-input-placeholder: var(--color-neutral-light-40);
+
+/*------------------------------------*\
+  TOOLBAR SEARCH MODAL
+\*------------------------------------*/
+
+--color-toolbar-search-modal-background-color-content: var(--color-white);
+--color-toolbar-search-modal-color-overlay: var(--color-secondary-dark-60-alpha-70);
 
 /*------------------------------------*\
   TOOLTIP

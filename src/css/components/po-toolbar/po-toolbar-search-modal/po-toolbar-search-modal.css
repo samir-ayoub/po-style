@@ -1,0 +1,38 @@
+:root {
+  --shadow-toolbar-search-modal-content: var(--shadow-toolbar-search-modal);
+}
+
+.po-toolbar-search-modal {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.po-toolbar-search-modal-overlay {
+  background-color: var(--color-toolbar-search-modal-color-overlay);
+  display: block;
+  /* este calculo resolve o problema do item po-modal/9684, no menu-html não ocupava o espaço todo disponivel. */
+  height: calc(100% + 1px);
+  overflow-y: auto;
+  position: fixed;
+  width: 100%;
+}
+
+.po-toolbar-search-modal-content {
+  background-color: var(--color-toolbar-search-modal-background-color-content);
+  border-radius: 3px;
+  box-shadow: var(--shadow-toolbar-search-modal-content);
+  display: block;
+  margin: 16px auto;
+  max-width: 768px;
+  padding: 16px;
+  padding-bottom: 8px;
+  position: relative;
+  text-align: left;
+  width: 90%;
+}

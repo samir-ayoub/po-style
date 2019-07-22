@@ -105,4 +105,38 @@
 
 .po-toolbar-search-box-list-item:hover .po-toolbar-search-box-list-item-group-clear {
   background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+  color: var(--color-toolbar-search-list-item-group-clear-color-text);
+  float: right;
+  padding-right: 8px;
+}
+
+.po-toolbar-search-modal .po-toolbar-search-box {
+  box-shadow: none;
+  margin-top: 12px;
+  max-height: 336px;
+  max-width: 100%;
+  overflow: scroll;
+  padding-top: 0;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.po-toolbar-search-modal .po-toolbar-search-box {
+  border-radius: 0;
+}
+
+.po-toolbar-search-modal .po-toolbar-search-box-list-item {
+  padding-left: 0;
+}
+
+.po-toolbar-search-box::-webkit-scrollbar-thumb {
+  background-color: var(--color-popover-background-color-scrollbar);
+}
+
+.po-toolbar-search-box::-webkit-scrollbar {
+  border-radius: 2px;
+  height: 4px;
+  opacity: 0.5;
+  width: 4px;
 }

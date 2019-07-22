@@ -2,6 +2,12 @@
   display: none;
 }
 
+.po-toolbar-search-modal-container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
 @media screen and (min-width: 950px) { 
 
   .po-toolbar-search-container {

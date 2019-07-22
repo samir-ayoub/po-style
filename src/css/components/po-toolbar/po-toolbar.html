@@ -183,7 +183,6 @@
 
     </div>
 
-
     <div class="container po-lg-12 margin-2 po-mb-5">
       <h4>Toolbar com campo de pesquisa</h4>
       <div class="po-toolbar po-toolbar-position">
@@ -308,9 +307,8 @@
       </div>
     </div>
 
-
     <div class="container po-lg-12 po-mb-5">
-      <h4>Toolbar com campo de pesquisa e popup com opções aberto</h4>
+      <h4>Toolbar com campo de pesquisa, popup aberto e tratamento para resoluções menores</h4>
       <div class="po-toolbar po-toolbar-position">
         <div class="po-toolbar-title"> 
           <p class="po-toolbar-title-text">PORTINARI HTML FRAMEWORK</p> 
@@ -371,6 +369,77 @@
         </div>
         <div class="po-toolbar-group-icon">
           <div class="po-toolbar-search-icon po-clickable">
+            <span class="po-icon po-icon-search po-toolbar-icon" onClick="document.getElementById('modalSearch').classList.remove('po-invisible');"></span>
+          </div>
+          <div class="po-toolbar-notification po-clickable">
+            <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+            <div class="po-toolbar-notification-badge">7</div>
+          </div>
+          <div class="po-toolbar-profile po-clickable">
+            <span class="po-icon po-icon-user po-toolbar-icon"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container po-lg-12 po-mb-5 margin-2">
+      <h4>Toolbar com campo de pesquisa e popup com opções aberto com hover e tratamento para resoluções menores</h4>
+      <div class="po-toolbar po-toolbar-position">
+        <div class="po-toolbar-title"> 
+          <p class="po-toolbar-title-text">PORTINARI HTML FRAMEWORK</p> 
+        </div>
+        <div class="po-toolbar-search-container">
+          <form>
+            <span class="po-icon po-icon-search po-toolbar-search-input-icon"></span>
+            <input 
+              id="toolbarSearchInput" 
+              class="po-toolbar-search-input po-toolbar-search-input-focused po-pl-4 po-pr-1" 
+              aria-autocomplete="both"
+              aria-expanded="true"
+              aria-haspopup="true"
+              placeholder="Placeholder"
+              role="combobox"
+              type="text"
+              value="">
+            <ul 
+              class="po-toolbar-search-box po-show"
+              aria-labelledby="toolbarSearchInput"
+              role="listbox">
+              <li class="po-toolbar-search-box-list-item-group" role="option">
+                  <p class="po-toolbar-search-box-list-item-text-grouper">
+                    Histórico de busca
+                  </p>
+                  <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
+                    Limpar
+                  </button>
+                  <ul>
+                    <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        Alabama
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-tollbar-search-box-list-item-icon-clean-visible po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">Florida</p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">Montana</p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+          </form>
+        </div>
+        <div class="po-toolbar-group-icon">
+          <div class="po-toolbar-search-icon po-clickable">
             <span class="po-icon po-icon-search po-toolbar-icon"></span>
           </div>
           <div class="po-toolbar-notification po-clickable">
@@ -393,14 +462,10 @@
       <br>
     </div>
 
-
-    <div class="container po-lg-12 po-mb-5">
-        <h4>Toolbar com campo de pesquisa e popup com opções aberto com hover</h4>
-        <div class="po-toolbar po-toolbar-position">
-          <div class="po-toolbar-title"> 
-            <p class="po-toolbar-title-text">PORTINARI HTML FRAMEWORK</p> 
-          </div>
-          <div class="po-toolbar-search-container">
+    <div id="modalSearch" class="po-toolbar-search-modal po-invisible">
+      <div class="po-toolbar-search-modal-overlay" onClick="document.getElementById('modalSearch').classList.add('po-invisible');">
+        <div tabindex="-1" class="po-toolbar-search-modal-content po-modal-lg">
+          <div class="po-toolbar-search-modal-container">
             <form>
               <span class="po-icon po-icon-search po-toolbar-search-input-icon"></span>
               <input 
@@ -412,66 +477,94 @@
                 placeholder="Placeholder"
                 role="combobox"
                 type="text"
-                value="">
+                value="N">
               <ul 
                 class="po-toolbar-search-box po-show"
                 aria-labelledby="toolbarSearchInput"
                 role="listbox">
                 <li class="po-toolbar-search-box-list-item-group" role="option">
-                    <p class="po-toolbar-search-box-list-item-text-grouper">
-                      Histórico de busca
-                    </p>
-                    <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
-                      Limpar
-                    </button>
-                    <ul>
-                      <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
-                        <p class="po-toolbar-search-box-list-item-text">
-                          Alabama
-                        </p>
-                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-tollbar-search-box-list-item-icon-clean-visible po-clickable">
-                          <span class="po-icon po-icon-close"></span>
-                        </button>
-                      </li>
-                      <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
-                        <p class="po-toolbar-search-box-list-item-text">Florida</p>
-                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
-                          <span class="po-icon po-icon-close"></span>
-                        </button>
-                      </li>
-                      <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
-                        <p class="po-toolbar-search-box-list-item-text">Montana</p>
-                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
-                          <span class="po-icon po-icon-close"></span>
-                        </button>
-                      </li>
-                    </ul>
-                  </li>
+                  <ul>
+                    <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">ebraska</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-tollbar-search-box-list-item-icon-clean-visible po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">evada</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">ew Hampshire</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="true">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">ew Jersey</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">ew Mexico</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">ew york</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="true">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">orth Carolina</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">orth Dakota</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                    <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                      <p class="po-toolbar-search-box-list-item-text">
+                        <span class="po-toolbar-search-box-list-item-typed-text">N</span><span class="po-toolbar-search-box-list-item-text-completed">orthern Marianas Island</span>
+                      </p>
+                      <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                        <span class="po-icon po-icon-close"></span>
+                      </button>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </form>
           </div>
-          <div class="po-toolbar-group-icon">
-            <div class="po-toolbar-search-icon po-clickable">
-              <span class="po-icon po-icon-search po-toolbar-icon"></span>
-            </div>
-            <div class="po-toolbar-notification po-clickable">
-              <span class="po-icon po-icon-notification po-toolbar-icon"></span>
-              <div class="po-toolbar-notification-badge">7</div>
-            </div>
-            <div class="po-toolbar-profile po-clickable">
-              <span class="po-icon po-icon-user po-toolbar-icon"></span>
-            </div>
-          </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
       </div>
+    </div>
+
   </section>
 </article>
