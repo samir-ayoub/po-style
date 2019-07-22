@@ -993,7 +993,7 @@
   --color-toolbar-search-input-color-icon: var(--color-primary);
   --color-toolbar-search-input-color-input-placeholder: var(--color-neutral-light-40);
 
-  /*------------------------------------*\
+/*------------------------------------*\
   TOOLBAR SEARCH BOX
 \*------------------------------------*/
 
@@ -1001,6 +1001,10 @@
   --color-toolbar-search-box-list-item-group-backgroud-color: var(--color-neutral-light-98);
   --color-toolbar-search-box-list-item-backgroud-color: var(--color-white);
   --color-toolbar-search-box-list-item-group-clear-color-text: var(--color-primary);
+  --color-toolbar-search-box-list-item-color-text-selected: var(--color-primary);
+  --color-toolbar-search-box-list-item-background-color-selected: var(--color-primary-light-95);
+  --color-toolbar-search-box-list-item-text-completed: var(--color-neutral-light-40);
+  --color-toolbar-search-box-list-item-typed-text: var(--color-neutral-dark-60);
 
 /*------------------------------------*\
   TOOLTIP

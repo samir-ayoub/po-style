@@ -1,12 +1,14 @@
 :root {
   --font-toolbar-search-box-list-item-group: var(--font-family-theme-bold);
   --font-toolbar-search-box-list-item: var(--font-family-theme);
+
+  --shadow-toolbar-box-shadow-content: var(--shadow-card);
 }
 
 .po-toolbar-search-box {
   @apply --font-toolbar-search-input-text;
   border-radius: 0 0 16px 16px;
-  box-shadow: var(--shadow-select-box-shadow-content);
+  box-shadow: var(--shadow-toolbar-box-shadow-content);
   display: none;
   height: auto;
   left: 0;
@@ -25,34 +27,82 @@
 }
 
 .po-toolbar-search-box-list-item.po-toolbar-search-box-list-item-selected {
-  background-color: red;
+  background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+  color: var(--color-toolbar-search-box-list-item-color-text-selected);
 }
 
 .po-toolbar-search-box.po-show {
   display: block;
 }
 
+.po-toolbar-search-box-list-item-text {
+  padding-right: 64px;
+  padding-left: 32px;
+}
+
+.po-toolbar-search-box-list-item-typed-text {
+  color: var(--color-toolbar-search-box-list-item-typed-text);
+}
+
+.po-toolbar-search-box-list-item-text-completed {
+  color: var(--color-toolbar-search-box-list-item-text-completed);
+}
+
 .po-toolbar-search-box-list-item {
   line-height: 40px;
   list-style: none;
   background-color: var(--color-toolbar-search-list-item-backgroud-color);
-  padding-left: 32px;
+  position: relative;
+}
+
+.po-toolbar-search-box-list-item:hover {
+  background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+  color: var(--color-toolbar-search-box-list-item-color-text-selected);
+}
+
+.po-toolbar-search-box-list-item:hover .po-toolbar-search-box-list-item-icon-clean {
+  display: block;
+  color: var(--color-toolbar-search-box-list-item-color-text-selected);
+  font-size: 16px;
+  border: none;
+  background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+}
+
+.po-toolbar-search-box-list-item-icon-clean {
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 8px;
 }
 
 .po-toolbar-search-box-list-item-group {
-  font-family: var(--font-toolbar-search-list-item-group);
   list-style: none;
   line-height: 40px;
-  background-color: var(--color-toolbar-search-list-item-group-backgroud-color);
+  position: relative;
+}
+
+.po-toolbar-search-box-list-item-text-grouper {
+  font-family: var(--font-toolbar-search-box-list-item-group);
+  background-color: var(--color-toolbar-search-box-list-item-group-backgroud-color);
+  padding-left: 32px;
 }
 
 .po-toolbar-search-box-list-item-group > .po-toolbar-search-list-item {
-  font-family: var(--font-toolbar-search-list-item);
+  font-family: var(--font-toolbar-search-box-list-item);
   padding-left: 0px;
 }
 
 .po-toolbar-search-box-list-item-group-clear {
-  color: var(--color-toolbar-search-list-item-group-clear-color-text);
-  float: right;
-  padding-right: 8px;
+  font-family: var(--font-toolbar-search-box-list-item-group);
+  color: var(--color-toolbar-search-box-list-item-group-clear-color-text);
+  right: 8px;
+  border: none;
+  background-color: var(--color-toolbar-search-box-list-item-group-backgroud-color);
+  font-size: 14px;
+  top: 11px;
+  position: absolute;
+}
+
+.po-toolbar-search-box-list-item:hover .po-toolbar-search-box-list-item-group-clear {
+  background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
 }

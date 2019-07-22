@@ -15,6 +15,14 @@
     left: auto;
     position: absolute;
   }
+
+  .po-tollbar-search-box-list-item-icon-clean-visible {
+    display: block;
+    color: var(--color-toolbar-search-box-list-item-color-text-selected);
+    font-size: 16px;
+    border: none;
+    background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+  }
 </style>
 
 <article>
@@ -324,25 +332,37 @@
               class="po-toolbar-search-box po-show"
               aria-labelledby="toolbarSearchInput"
               role="listbox">
-              <li role="option">
-                <div class="po-toolbar-search-box-list-item-group po-toolbar-search-box-list-item">
-                  Estados <span class="po-toolbar-search-box-list-item-group-clear">Limpar</span>
-                </div>
+              <li class="po-toolbar-search-box-list-item-group" role="option">
+                <p class="po-toolbar-search-box-list-item-text-grouper">
+                  Histórico de busca
+                </p>
+                <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
+                  Limpar
+                </button>
                 <ul>
-                  <li class="po-toolbar-search-box-list-item-selected po-toolbar-search-box-list-item" role="option" aria-selected="true">
-                    <div class="po-toolbar-search-box-list-item-text">
-                      Alabama
-                    </div>
+                  <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
+                    <p class="po-toolbar-search-box-list-item-text">
+                      <span class="po-toolbar-search-box-list-item-typed-text">Ala</span><span class="po-toolbar-search-box-list-item-text-completed">bama</span>
+                    </p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
-                  <li role="option">
-                    <div class="po-toolbar-search-box-list-item">
-                      Florida
-                    </div>
+                  <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                    <p class="po-toolbar-search-box-list-item-text">
+                      <span class="po-toolbar-search-box-list-item-typed-text">Ala</span><span class="po-toolbar-search-box-list-item-text-completed">mbique</span>
+                    </p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
-                  <li role="option">
-                    <div class="po-toolbar-search-box-list-item">
-                      Montana
-                    </div>
+                  <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                    <p class="po-toolbar-search-box-list-item-text">
+                      <span class="po-toolbar-search-box-list-item-typed-text">Ala</span><span class="po-toolbar-search-box-list-item-text-completed">meda</span>
+                    </p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
                 </ul>
               </li>
@@ -362,6 +382,96 @@
           </div>
         </div>
       </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
+
+
+    <div class="container po-lg-12 po-mb-5">
+        <h4>Toolbar com campo de pesquisa e popup com opções aberto com hover</h4>
+        <div class="po-toolbar po-toolbar-position">
+          <div class="po-toolbar-title"> 
+            <p class="po-toolbar-title-text">PORTINARI HTML FRAMEWORK</p> 
+          </div>
+          <div class="po-toolbar-search-container">
+            <form>
+              <span class="po-icon po-icon-search po-toolbar-search-input-icon"></span>
+              <input 
+                id="toolbarSearchInput" 
+                class="po-toolbar-search-input po-toolbar-search-input-focused po-pl-4 po-pr-1" 
+                aria-autocomplete="both"
+                aria-expanded="true"
+                aria-haspopup="true"
+                placeholder="Placeholder"
+                role="combobox"
+                type="text"
+                value="">
+              <ul 
+                class="po-toolbar-search-box po-show"
+                aria-labelledby="toolbarSearchInput"
+                role="listbox">
+                <li class="po-toolbar-search-box-list-item-group" role="option">
+                    <p class="po-toolbar-search-box-list-item-text-grouper">
+                      Histórico de busca
+                    </p>
+                    <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
+                      Limpar
+                    </button>
+                    <ul>
+                      <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
+                        <p class="po-toolbar-search-box-list-item-text">
+                          Alabama
+                        </p>
+                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-tollbar-search-box-list-item-icon-clean-visible po-clickable">
+                          <span class="po-icon po-icon-close"></span>
+                        </button>
+                      </li>
+                      <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                        <p class="po-toolbar-search-box-list-item-text">Florida</p>
+                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                          <span class="po-icon po-icon-close"></span>
+                        </button>
+                      </li>
+                      <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                        <p class="po-toolbar-search-box-list-item-text">Montana</p>
+                        <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                          <span class="po-icon po-icon-close"></span>
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            </form>
+          </div>
+          <div class="po-toolbar-group-icon">
+            <div class="po-toolbar-search-icon po-clickable">
+              <span class="po-icon po-icon-search po-toolbar-icon"></span>
+            </div>
+            <div class="po-toolbar-notification po-clickable">
+              <span class="po-icon po-icon-notification po-toolbar-icon"></span>
+              <div class="po-toolbar-notification-badge">7</div>
+            </div>
+            <div class="po-toolbar-profile po-clickable">
+              <span class="po-icon po-icon-user po-toolbar-icon"></span>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
   </section>
 </article>
