@@ -194,36 +194,45 @@
             <span class="po-icon po-icon-search po-toolbar-search-input-icon"></span>
             <input 
               id="toolbarSearchInput" 
-              class="po-toolbar-search-input po-pl-4 po-pr-1" 
+              class="po-toolbar-search-input po-pl-4" 
               aria-autocomplete="both"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-haspopup="true"
               placeholder="Placeholder"
               role="combobox"
               type="text">
             <ul 
+              id="showInput"
               class="po-toolbar-search-box"
               aria-labelledby="toolbarSearchInput"
               role="listbox">
-              <li role="option">
-                <div class="po-toolbar-search-box-list-item-group po-toolbar-search-box-list-item">
-                  Estados <span class="po-toolbar-search-box-list-item-group-clear">Limpar</span>
-                </div>
+              <li class="po-toolbar-search-box-list-item-group" role="option">
+                <p class="po-toolbar-search-box-list-item-text-grouper">
+                  Histórico de busca
+                </p>
+                <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
+                  Limpar
+                </button>
                 <ul>
-                  <li class="po-toolbar-search-box-list-item" role="option">
-                    <div class="po-toolbar-search-box-list-item-text">
+                  <li class="po-toolbar-search-box-list-item po-clickable po-toolbar-search-box-list-item-selected" role="option" aria-selected="true">
+                    <p class="po-toolbar-search-box-list-item-text">
                       Alabama
-                    </div>
+                    </p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-tollbar-search-box-list-item-icon-clean-visible po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
-                  <li role="option">
-                    <div class="po-toolbar-search-box-list-item">
-                      Florida
-                    </div>
+                  <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                    <p class="po-toolbar-search-box-list-item-text">Florida</p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
-                  <li role="option">
-                    <div class="po-toolbar-search-box-list-item">
-                      Montana
-                    </div>
+                  <li class="po-toolbar-search-box-list-item po-clickable" role="option" aria-selected="false">
+                    <p class="po-toolbar-search-box-list-item-text">Montana</p>
+                    <button type="button" class="po-toolbar-search-box-list-item-icon-clean po-clickable">
+                      <span class="po-icon po-icon-close"></span>
+                    </button>
                   </li>
                 </ul>
               </li>
@@ -327,7 +336,7 @@
               type="text"
               value="Ala">
             <ul 
-              class="po-toolbar-search-box po-show"
+              class="po-toolbar-search-box po-toolbar-search-box-show"
               aria-labelledby="toolbarSearchInput"
               role="listbox">
               <li class="po-toolbar-search-box-list-item-group" role="option">
@@ -402,7 +411,7 @@
               type="text"
               value="">
             <ul 
-              class="po-toolbar-search-box po-show"
+              class="po-toolbar-search-box po-toolbar-search-box-show"
               aria-labelledby="toolbarSearchInput"
               role="listbox">
               <li class="po-toolbar-search-box-list-item-group" role="option">
@@ -479,7 +488,7 @@
                 type="text"
                 value="N">
               <ul 
-                class="po-toolbar-search-box po-show"
+                class="po-toolbar-search-box po-toolbar-search-box-show"
                 aria-labelledby="toolbarSearchInput"
                 role="listbox">
                 <li class="po-toolbar-search-box-list-item-group" role="option">

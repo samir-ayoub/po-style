@@ -9,30 +9,29 @@
   @apply --font-toolbar-search-input-text;
   border-radius: 0 0 16px 16px;
   box-shadow: var(--shadow-toolbar-box-shadow-content);
-  display: none;
-  height: auto;
   left: 0;
   list-style: none;
-  max-height: 432px;
+  max-height: 0;
   max-width: 480px;
-  overflow: scroll;
+  overflow: hidden;
   padding: 0;
-  padding-top: 24px;
   position: absolute;
   right: 0;
   text-align: left;
   top: 50%;
-  width: auto;
+  visibility: hidden;
   z-index: -1;
+}
+
+.po-toolbar-search-box.po-toolbar-search-box-show {
+  max-height: 432px;
+  padding-top: 24px;
+  visibility: visible;
 }
 
 .po-toolbar-search-box-list-item.po-toolbar-search-box-list-item-selected {
   background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
   color: var(--color-toolbar-search-box-list-item-color-text-selected);
-}
-
-.po-toolbar-search-box.po-show {
-  display: block;
 }
 
 .po-toolbar-search-box-list-item-text {
@@ -108,26 +107,6 @@
   color: var(--color-toolbar-search-list-item-group-clear-color-text);
   float: right;
   padding-right: 8px;
-}
-
-.po-toolbar-search-modal .po-toolbar-search-box {
-  box-shadow: none;
-  margin-top: 12px;
-  max-height: 336px;
-  max-width: 100%;
-  overflow: scroll;
-  padding-top: 0;
-  position: relative;
-  top: 0;
-  z-index: 0;
-}
-
-.po-toolbar-search-modal .po-toolbar-search-box {
-  border-radius: 0;
-}
-
-.po-toolbar-search-modal .po-toolbar-search-box-list-item {
-  padding-left: 0;
 }
 
 .po-toolbar-search-box::-webkit-scrollbar-thumb {
