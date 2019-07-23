@@ -10,7 +10,6 @@
   border-radius: 0 0 16px 16px;
   box-shadow: var(--shadow-toolbar-box-shadow-content);
   left: 0;
-  list-style: none;
   max-height: 0;
   max-width: 480px;
   overflow: hidden;
@@ -21,6 +20,10 @@
   top: 50%;
   visibility: hidden;
   z-index: -1;
+}
+
+.po-toolbar-search-box-list {
+  list-style: none;
 }
 
 .po-toolbar-search-box.po-toolbar-search-box-show {
@@ -118,4 +121,18 @@
   height: 4px;
   opacity: 0.5;
   width: 4px;
+}
+
+.po-toolbar-search-box-list-no-data {
+  font-family: var(--font-toolbar-search-box-list-item);
+  line-height: 16px;
+}
+
+.po-toolbar-search-box-list-item-text-no-data {
+  padding-left: 32px;
+  margin-right: 32px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  white-space: normal;
+  font-size: 14px;
 }
