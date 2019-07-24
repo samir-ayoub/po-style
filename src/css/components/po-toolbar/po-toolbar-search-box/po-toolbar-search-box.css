@@ -28,7 +28,7 @@
 }
 
 .po-toolbar-search-box.po-toolbar-search-box-show {
-  max-height: 432px;
+  max-height: 90vh;
   padding-top: 24px;
   visibility: visible;
 }
@@ -52,10 +52,14 @@
 }
 
 .po-toolbar-search-box-list-item {
+  background-color: var(--color-toolbar-search-list-item-backgroud-color);
   line-height: 40px;
   list-style: none;
-  background-color: var(--color-toolbar-search-list-item-backgroud-color);
   position: relative;
+}
+
+.po-toolbar-search-box-list-item:focus {
+  outline: 2px dashed var(--color-toolbar-search-box-list-item-color-outline);
 }
 
 .po-toolbar-search-box-list-item:hover {
@@ -64,29 +68,29 @@
 }
 
 .po-toolbar-search-box-list-item:hover .po-toolbar-search-box-list-item-icon-clean {
-  display: block;
-  color: var(--color-toolbar-search-box-list-item-color-text-selected);
-  font-size: 16px;
-  border: none;
   background-color:var(--color-toolbar-search-box-list-item-background-color-selected);
+  border: none;
+  color: var(--color-toolbar-search-box-list-item-color-text-selected);
+  display: block;
+  font-size: 16px;
 }
 
 .po-toolbar-search-box-list-item-icon-clean {
   display: none;
   position: absolute;
-  top: 11px;
   right: 8px;
+  top: 11px;
 }
 
 .po-toolbar-search-box-list-item-group {
-  list-style: none;
   line-height: 40px;
+  list-style: none;
   position: relative;
 }
 
 .po-toolbar-search-box-list-item-text-grouper {
-  font-family: var(--font-toolbar-search-box-list-item-group);
   background-color: var(--color-toolbar-search-box-list-item-group-backgroud-color);
+  font-family: var(--font-toolbar-search-box-list-item-group);
   padding-left: 32px;
 }
 
@@ -96,14 +100,16 @@
 }
 
 .po-toolbar-search-box-list-item-group-clear {
-  font-family: var(--font-toolbar-search-box-list-item-group);
-  color: var(--color-toolbar-search-box-list-item-group-clear-color-text);
-  right: 8px;
-  border: none;
   background-color: var(--color-toolbar-search-box-list-item-group-backgroud-color);
+  border: none;
+  color: var(--color-toolbar-search-box-list-item-group-clear-color-text);
+  font-family: var(--font-toolbar-search-box-list-item-group);
   font-size: 14px;
-  top: 11px;
+  height: 24px;
   position: absolute;
+  right: 8px;
+  top: 11px;
+  width: 61px;
 }
 
 .po-toolbar-search-box-list-item:hover .po-toolbar-search-box-list-item-group-clear {
@@ -111,6 +117,10 @@
   color: var(--color-toolbar-search-list-item-group-clear-color-text);
   float: right;
   padding-right: 8px;
+}
+
+.po-toolbar-search-box-list-item-group-clear:focus {
+  outline: 2px dashed var(--color-toolbar-search-box-list-item-color-outline);
 }
 
 .po-toolbar-search-box::-webkit-scrollbar-thumb {
@@ -130,10 +140,10 @@
 }
 
 .po-toolbar-search-box-list-item-text-no-data {
-  padding-left: 32px;
-  margin-right: 32px;
-  padding-top: 8px;
-  padding-bottom: 16px;
-  white-space: normal;
   font-size: 14px;
+  margin-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-top: 8px;
+  white-space: normal;
 }

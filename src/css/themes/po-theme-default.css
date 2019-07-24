@@ -995,6 +995,7 @@
   --color-toolbar-search-box-list-item-background-color-selected: var(--color-primary-light-95);
   --color-toolbar-search-box-list-item-text-completed: var(--color-neutral-light-40);
   --color-toolbar-search-box-list-item-typed-text: var(--color-neutral-dark-60);
+  --color-toolbar-search-box-list-item-color-outline: var(--color-secondary);
 
 /*------------------------------------*\
   TOOLBAR SEARCH INPUT
