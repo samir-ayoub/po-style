@@ -446,7 +446,7 @@
                   <p class="po-toolbar-search-box-list-item-text-grouper">
                     Histórico de busca
                   </p>
-                  <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable">
+                  <button type="button" class="po-toolbar-search-box-list-item-group-clear po-clickable" onClick="document.getElementById('modalClean').classList.remove('po-invisible');">
                     Limpar
                   </button>
                   <ul class="po-toolbar-search-box-list">
@@ -718,5 +718,55 @@
         </div>
       </div>
     </div>
+
+    <div  id="modalClean" class="po-modal po-invisible">
+      <div class="po-modal-overlay">
+        <div class="po-modal-container po-p-2">
+          <div class="po-modal-vertical-align">
+            <div tabindex="-1" class="po-modal-content po-modal-lg">
+              <div class="po-modal-header po-modal-display-table-fixed">
+                <div class="po-modal-title po-text-ellipsis">
+                  Limpar histórico?
+                </div>
+                <a class="po-modal-header-close-button" tabindex="0" onClick="document.getElementById('modalClean').classList.add('po-invisible');">
+                  <span class="po-icon po-icon-close"></span>
+                </a>
+              </div>
+              <div class="po-modal-body">
+                <div class="po-font-text-large po-mb-1">
+                  Tem certeza que deseja limpar seu histórico de busca?
+                </div>
+                <div class="po-font-text-large po-mb-4">
+                  Ele existe para aumentar a produtividade e fica visível apenas para VOCÊ.
+                </div>
+                <div class="po-font-text-large-bold po-toolbar-search-modal-danger po-toolbar-search-modal-alert-uppercase po-mb-1">
+                  ATENÇÃO:
+                </div>
+                <div class="po-font-text-large-bold po-toolbar-search-modal-danger">
+                  Todo seu histórico de busca será excluido.
+                </div>
+              </div>
+              <div class="po-modal-footer">
+                <po-button>
+                  <button
+                    class="po-button"
+                    type="button" onClick="document.getElementsByClassName('po-modal')[2].style.display = 'none';">
+                      Cancelar
+                  </button>
+                </po-button>
+                <po-button class="po-button-modal-first-action">
+                  <button
+                    class="po-button po-button-primary"
+                    type="button" onClick="document.getElementsByClassName('po-modal')[2].style.display = 'none';">
+                      Confirmar
+                  </button>
+                </po-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </article>
